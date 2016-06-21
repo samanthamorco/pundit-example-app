@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+%html
+  %body
+    - flash.each do |name, msg|
+      %div
+        %span{ class: "flash flash-#{name}" }
+          = msg
+    = yield
